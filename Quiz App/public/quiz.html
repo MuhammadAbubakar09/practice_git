@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Master Quiz - Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logo-container">
+    <img src="AR.png" alt="AR Master Quiz Logo" class="logo">
+  </div>
+
+   <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="instructions.html">Instructions</a>
+      <a href="about.html">About</a>
+  </div>
+</nav>
+
+
+  <div class="container-card">
+    <h1>AR Master Quiz</h1>
+    <p id="question-progress"></p>
+
+    <!-- QUIZ CONTENT -->
+    <div id="quiz-content">
+      <p id="question-text"></p>
+      <div id="answer-options"></div>
+
+      <div>
+        <p id="feedback-message" class="feedback"></p>
+        <button id="next-button" class="gradient-button" disabled>Submit Answer</button>
+      </div>
+    </div>
+
+    <!-- RESULTS VIEW -->
+    <div id="results-view" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <p>Final Score: <span id="final-score"></span></p>
+      <p id="score-message" class="result-message"></p>
+      <div id="review-list"></div>
+      <a href="index.html" class="gradient-button">Restart Quiz</a>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <div class="footer">
+    <p>© 2025 AR Master Quiz | Made with ❤️ by <a href="https://www.linkedin.com/in/muhammad-abubakar-9a1859371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">BinaryBeast</a></p>
+  </div>
+</body>
+</html>
