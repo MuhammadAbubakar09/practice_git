@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <button class="hamburger" aria-label="Menu">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <div class="logo" tabindex="0" aria-label="Portfolio Logo">
+    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" >
+      <circle cx="32" cy="32" r="30" stroke="var(--teal-accent)" stroke-width="4" fill="none" />
+      <path d="M20 44 L32 20 L44 44" stroke="var(--teal-accent)" stroke-width="4" fill="none" stroke-linejoin="round" />
+      <line x1="32" y1="20" x2="32" y2="44" stroke="var(--teal-accent)" stroke-width="4" />
+    </svg>
+    <span class="logo-text">AR Portfolio</span>
+  </div>
+
+  <!-- Desktop navigation -->
+  <nav class="desktop-nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Mobile navigation (hidden by default) -->
+  <nav class="mobile-nav" aria-label="Mobile navigation menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button id="theme-toggle" aria-label="Toggle Dark Mode">
+    <i class="fa-regular fa-moon"></i>
+  </button>
+</header>
+
+
+  <section id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>"Code is like art. Simple. Clean. Purposeful."</p>
+    <button>Explore</button>
+  </section>
+
+  <section id="about">
+    <img src="AR.jpg" alt="Profile picture" />
+    <div>
+      <h2>About Me</h2>
+      <p>
+        Your frontend developer providing the best frontend experience to you. I am 17 years old, great guy who wants to serve his skills worldwide. I specialize in frontend development using HTML, CSS, and JavaScript. "I have also worked on MongoDB, PHP, React, NodeJS, and ExpressJS on small practice projects." Currently working with Pakistan Communication Company (Silver Point) about 6 months. Always learning and improving. Thanks for review!
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-box">
+      <div>
+        <h3>HTML 90%</h3>
+        <div class="bar"><div class="bar-fill" style="width: 90%;"></div></div>
+      </div>
+      <div>
+        <h3>CSS 90%</h3>
+        <div class="bar"><div class="bar-fill" style="width: 90%;"></div></div>
+      </div>
+      <div>
+        <h3>JavaScript 80%</h3>
+        <div class="bar"><div class="bar-fill" style="width: 80%;"></div></div>
+      </div>
+      <div>
+        <h3>React.JS 80%</h3>
+        <div class="bar"><div class="bar-fill" style="width: 80%;"></div></div>
+      </div>
+      <div>
+        <h3>Node.JS/Express.JS 70%</h3>
+        <div class="bar"><div class="bar-fill" style="width: 70%;"></div></div>
+      </div>
+      <div>
+        <h3>PHP/Laravel 60%</h3>
+        <div class="bar"><div class="bar-fill" style="width: 60%;"></div></div>
+      </div>
+      <div>
+        <h3>MongoDB 60%</h3>
+        <div class="bar"><div class="bar-fill" style="width: 60%;"></div></div>
+      </div>
+      <div>
+        <h3>MySQL 60%</h3>
+        <div class="bar"><div class="bar-fill" style="width: 60%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>Currently working with Silver Point Communication as a Junior Trainee Developer.</p>
+
+    <div class="projects">
+      <div class="project-box">
+        <img src="Wrist.jpg" alt="Project One" />
+        <h3>Watch Business</h3>
+       <button onclick="window.open('http://127.0.0.1:5500/M.Assignment/index.html')">View More</button>
+      </div>
+      <div class="project-box">
+        <img src="Le Marais.jpg" alt="Project Three" />
+        <h3>Cafe Bistro</h3>
+      <button onclick="window.open('http://127.0.0.1:5500/Pro%20Webpage/Last.html')">View More</button>
+
+      </div>
+    </div>
+  </section>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <button class="submit" type="submit">Send</button>
+  </form>
+  <div class="icons">
+    <a href="https://www.linkedin.com/in/muhammad-abubakar-9a1859371/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/MuhammadAbubakar09/practice_git" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="https://wa.me/923322944240" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+</section>
+
+  <footer>
+    <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abubakar3691215@gmail.com" target="_blank" rel="noopener noreferrer">abubakar3691215@gmail.com</a>
+ | Phone: +92 3322944240 | Pakistan</p>
+  </footer>
+
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+    const icon = toggleButton.querySelector('i');
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      if(body.classList.contains('dark-mode')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+    });
+
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (name && email && message) {
+    const phone = '923322944240';
+    const text = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    const url = `https://wa.me/${phone}?text=${text}`;
+
+    window.open(url, '_blank');
+
+    this.reset();  
+  } else {
+    alert('Please fill out all fields before sending.');
+  }
+});
+
+  const hamburger = document.querySelector(".hamburger");
+const mobileNav = document.querySelector(".mobile-nav");
+
+hamburger.addEventListener("click", () => {
+  mobileNav.classList.toggle("active");
+  hamburger.classList.toggle("active"); // optional if you want hamburger animation
+});
+
+
+
+  </script>
+</body>
+</html>

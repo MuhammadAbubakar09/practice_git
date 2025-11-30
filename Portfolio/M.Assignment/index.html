@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AR Store | Luxury Watches</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">
+  <img src="logonew2.png">
+</a>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-controls">
+      <input type="text" class="search-bar" placeholder="Search..." />
+      <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
+    </div>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to AR Watches</h2>
+    <p>Experience timeless elegance with watches that blend tradition and modern precision.</p>
+  </section>
+
+  <section id="products" class="fade-in">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="watch1.jpg" alt="Classic Watch">
+        <h4>Classic Elegance</h4><p>$250</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="view-details">View Details</button>
+      </div>
+      <div class="product-card">
+        <img src="watch2.jpg" alt="Sport Watch">
+        <h4>Sport Edition</h4><p>$320</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="view-details">View Details</button>
+      </div>
+      <div class="product-card">
+        <img src="watch3.jpg" alt="Minimal Watch">
+        <h4>Minimal Silver</h4><p>$280</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="view-details">View Details</button>
+      </div>
+      <div class="product-card">
+        <img src="watch4.jpg" alt="Luxury Watch">
+        <h4>Luxury Gold</h4><p>$540</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="view-details">View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Search Result Modal -->
+<div id="search-modal" class="search-modal">
+  <div class="search-content">
+    <span class="search-close">&times;</span>
+    <img id="search-img" src="" alt="Watch">
+    <h3 id="search-name"></h3>
+    <p id="search-price"></p>
+    <p id="search-color"></p>
+    <button id="add-cart-btn">Add to Cart</button>
+  </div>
+</div>
+
+
+
+  <!-- ✅ Cart Modal -->
+<div id="cart-modal" class="cart-modal">
+  <div class="cart-content">
+    <span class="cart-close">&times;</span>
+    <h3>Your Cart</h3>
+    <div id="cart-items"></div>
+    <button id="order-btn">Order Now</button>
+  </div>
+</div>
+
+
+  <!-- ✅ Quick View Modal -->
+<div id="quick-view-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <img id="modal-img" src="" alt="Watch image">
+    <h3 id="modal-title"></h3>
+    <p id="modal-price"></p>
+    <p id="modal-color"></p>
+  </div>
+</div>
+
+  <section id="collection" class="fade-in">
+    <h2>New Arrivals</h2>
+    <div class="collection-grid">
+      <div class="collection-item">
+        <img src="rolex.jpg" alt="Rolex New">
+        <h4>Rolex Prestige 2025</h4>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="view-details">View Details</button>
+      </div>
+      <div class="collection-item">
+        <img src="omega.jpg" alt="Omega New">
+        <h4>Omega Seamaster 2025</h4>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="view-details">View Details</button>
+      </div>
+      <div class="collection-item">
+        <img src="rado.jpg" alt="Rado New">
+        <h4>Rado HyperChrome</h4>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="view-details">View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          At AR Watches, we believe a watch is more than just a timepiece — it’s a statement of identity, precision, and confidence.
+          Our journey began with a simple idea: to blend craftsmanship and technology into every design. Each watch is made using durable materials,
+          refined mechanisms, and elegant finishes. From formal classics to modern minimal styles, our collection represents timeless charm and quality.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="pic2.jpg" alt="Watch Image">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+    <p><strong>Address:</strong> Shop #12, Main Market, Sukkur, Pakistan</p>
+    <p>© <span id="year"></span> AR Watches. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
